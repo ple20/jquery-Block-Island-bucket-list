@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <title>Block Island Bucket List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="accordion.css">
+  </head>
+  <body>
+    <p>
+    <h1>
+    Welcome to Block Island!</h1>
+    <p>
+    Labeled by The Nature Conservancy as <em>"One of the 12 last great places in the Western Hemisphere,"</em> Block Island boasts pristine beaches, over 30 miles of trails, 365 freshwater ponds, and centuries of history, from the Naragansett Indians to the Revolutionary War.
+    <div>
+    If you're planning your first visit to the island, you may not know where to start. Below some bucket list destinations exciting activities on land and at sea.
+    </div>
+    <em>Click the categories below below to reveal photos of some Block Island landmarks.</em>
+    <p>
+        <div class="accordion">
+        <h2><a href="">Town</a></h2>
+        <p>
+         <img src="img/town.jpg" width=750 class="myimg" alt="town"> <img src="img/ferry.jpg" width=750 class="myimg" alt="ferry">
+        </p>
+        <em>If you arrive on the island by ferry, you'll dock at Old Harbor, just steps from Water Street, in the center of town.</em>
+         <h3>Shopping</h3>
+         Spend the day exploring Water Street, browsing art galleries and antique shops, stock up on beach supplies at the surf shops, and browse the boutiques for the perfect gifts and souveniers.
+        <p>
+        <h3>Dining</h3>
+        Water Street is home to some of the best dining on the island. Try The National Hotel Tap & Grille for fresh catches and ocean views.
+       <p>
+       <p>
+        <h3>R&R</h3>
+        If you're looking for a relaxing retreat, take advantage of Block Island's salons, spas, yoga studios. Koru Eco Spa, at the center of town, is a one-stop shop for hair, nails, massages, facials and more.
+        <p>
+
+
+        <div class="accordion">
+        <h2><a href="">Land</a></h2>
+        <p>
+        <img src="img/stairs.jpg" width=750 class="myimg" alt="stairs"> <img src="img/cliff.jpg" width=750 class="myimg" alt="cliffs">
+      </p>
+      <em>Block Island is known for its pictureque trails, and has something for everyone, from a leisurely beach stroll to a steep hike.</em>
+        <h3>Hiking</h3>
+        Mohegan Bluffs, featuring over 140 steps down the cliffs leading to the water, is a must-see. Enjoy the view from the top of the mountain, then climb down to explore the beaches.
+        <h3>Horseback Riding</h3>
+        For an exciting activity for the whole family, enjoy the beach on horeback with a sunset ride.
+        <h3>Walks</h3>
+      For a more peaceful stroll, try Clayhead Trail, leading to quiet beaches. Or, explore the Corn Maze for an exursion the kids will love.
+
+      <div class="accordion">
+        <h2><a href="">Sea</a></h2>
+        <p>
+          <img src="img/beach.jpg" width=750 class="myimg" alt="beach"> <img src="img/marsh.jpg" width=750 class="myimg">
+        </p>
+        <em>Block Island offers a range of aquatic adventures.</em>
+        <h3>Boating</h3>
+        From kayaking across a secluded pond to sailing the open ocean Block Island offers boating options for every abilitty level.
+        <h3>Water Sports</h3>
+        If you're feeling adventurous, try parasailing, jet skiing, water skiing, and more! Ponds are also perfect for paddleboarding and fishing.
+        <h3>Diving & Snorkeling</h3>
+        Divers can explore centuries-old shipwrecks and embark on shark cage trips. For those who want to stay close to shore, the island plenty of hotspots for snorkelikng, like Surf Beach, and Black Rock Beach for skilled surfers.
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+              var allPanels = $('.accordion p').hide();
+
+              $('.accordion > h2 > a').click(function() {
+                allPanels.slideUp();
+                $(this).parent().next().slideDown();
+                return false;
+              });
+
+                });
+        </script>
+  </body>
+</html>

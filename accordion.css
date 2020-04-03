@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+title {}
+body {
+  font: 24px;
+  background-color: powderblue;
+  font-family: 'Fira Sans', sans-serif;
+}
+.accordion {
+}
+.accordion h2,
+.accordion p {
+  background-color: mistyrose;
+}
+.accordion h2:last-of-type,
+.accordion p:last-of-type {
+  border-bottom: 0px solid white;
+}
+.accordion h2 a,
+.accordion p a {
+  display: block;
+  color: black;
+  font-weight: bold;
+}
+
+.accordion h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.accordion p {
+  border-top: 0;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flow-root;
+}
+.accordion p:last-of-type {
+  border-top: 0px solid white;
+  position: relative;
+  top: -1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.myimg {
+  float:center;
+  padding: 10px;
+}
